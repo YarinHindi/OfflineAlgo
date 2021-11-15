@@ -1,17 +1,17 @@
-import Node
+from Node import Node
 
 
 class ElevatorCallList:
 
-    def __init__(self, num_of_elevators):
-        upCalls = []
+    def __init__(self, num_of_elevators=0):
+        self.upCalls = []
         for i in range(0, num_of_elevators):
-            upCalls.append([])
-        downCalls = []
+            self.upCalls.append([])
+        self.downCalls = []
         for i in range(0, num_of_elevators):
-            downCalls.append([])
+            self.downCalls.append([])
 
-    def addCall(self, call, elev_index, src_time, dest_time):
+    def add_call(self, call, elev_index, src_time, dest_time):
         way = call.dest - call.src
         src_node = Node(call.src, src_time)
         dest_node = Node(call.dest, dest_time)
@@ -36,6 +36,6 @@ class ElevatorCallList:
                 # traverse the array from 0 to n-i-1
                 # Swap if the element found is greater
                 # than the next element
-                if calls[j].time_stamp > calls[j + 1].time_stamp:
-                    calls[j], calls[j + 1] = calls[j + 1], calls[j]
+                if calls[elev_index][j].time_stamp > calls[elev_index][j + 1].time_stamp:
+                    calls[elev_index][j], calls[elev_index][j + 1] = calls[elev_index][j + 1], calls[elev_index][j]
         return calls
