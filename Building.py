@@ -7,6 +7,7 @@ class Building:
         self.maxFloor = maxFloor
         self.elevatorsArray = elevatorsArray
 
+
     @staticmethod
     def loadfromjson(filename):
 
@@ -23,6 +24,9 @@ class Building:
 
                 return Building(minFloor,maxFloor,elevatorsArray)
 
+    """
+    this function is static method that take a json file reprsent Building and convert him to a Building object. 
+    """
 
     def __str__(self) -> str:
         a=""
