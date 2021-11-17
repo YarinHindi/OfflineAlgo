@@ -40,6 +40,10 @@ B5 | b | 34.58 | 0
 B5 | c | 34.27 | 0
 B5 | d | 35.21 | 0
 
+# UML
+![image](https://user-images.githubusercontent.com/79517893/142278991-4ee1fb9b-5dd2-4d84-816a-683103a823e1.png)
+
+
 project creators:
 Matan Yarin Shimon & Yarin Hindi
 
