@@ -25,12 +25,3 @@ class OffLineAlgo_test(TestCase):
 
     def test_existed_floor(self):
         self.assertEqual(self.algo.existed_floor(4,self.algo.callList.upCalls[1],0),(1,True),"gonna return true")
-
-
-
-
-
-
-
-
-

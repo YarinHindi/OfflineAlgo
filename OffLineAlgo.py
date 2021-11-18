@@ -475,22 +475,3 @@ class OffLineAlgo:
       this function is symmetrical to the function above
       is the opposite for the function up_call_src_otw_to_up.
     """
-
-
-if __name__ == '__main__':
-    algo = OffLineAlgo("B3.json", "Calls_c.csv")
-    for i in range(len(algo.mycall)):
-        index = algo.allocate_elevator(algo.mycall[i])
-        algo.mycall[i].elev_index = index
-
-    Calls.callsToCsv(algo.mycall)
-
-    """
-    in the main function we are creating a OffLineAlgo object and we are getting a json file represent 
-    object Building and csv file represent all the calls we are getting.
-    
-    the for loop will run on the length of the calls array and for each call we going to send to 
-    the allocate function that will return us the index representing the elevator that will take the call
-    after we are going to finish we are going to used the function that convert the calls array to csv 
-    file and in the file we have the answer for which elevator will take each call.
-    """

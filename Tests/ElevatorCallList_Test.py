@@ -18,9 +18,3 @@ class ElevatorCallList_test(TestCase):
         self.assertEqual(self.elevatorcalllist.upCalls[0][0].floor,3,"that the floor")
         self.assertEqual(len(self.elevatorcalllist.downCalls[0]),0)
         self.assertEqual(self.elevatorcalllist.upCalls[0][0].time_stamp,5, "check time_stamp")
-
-
-
-
-
-

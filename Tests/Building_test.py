@@ -12,10 +12,3 @@ class Building_test(TestCase):
 
     def test_loadfromjson(self):
         self.assertEqual(len(self.building.elevatorsArray),len(self.jsonBuilding.elevatorsArray),"True")
-
-
-
-
-
-
-
