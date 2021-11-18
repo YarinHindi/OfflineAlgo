@@ -43,7 +43,7 @@ B5 | c | 34.27 | 0
 B5 | d | 35.21 | 0
 
 # UML
-![image](https://user-images.githubusercontent.com/63747865/142415833-bb936e41-a932-40f3-b844-48494b788fc0.png)
+![image](https://user-images.githubusercontent.com/63747865/142432046-89d3f326-4c27-4d53-86e0-ad4f762266e6.png)
 
 # How to run
 Run the main.py file, with the right json file that present building and csv file that present calls.
