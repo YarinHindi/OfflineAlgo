@@ -1,5 +1,5 @@
 import sys
-from OffLineAlgo import OffLinealgo
+from OffLineAlgo import OffLineAlgo
 from Calls import Calls
 
 """
@@ -15,22 +15,19 @@ if __name__ == '__main__':
     algo = 0
     output_filename = ""
     if len(sys.argv) == 4:
-        while True:
-            try:
-                building_filename = sys.argv[1]
-                calls_filename = sys.argv[2]
-                output_filename = sys.argv[3]
-                algo = OffLinealgo(building_filename, calls_filename)
-                break
-            except:
-                print("Wrong building or calls file path.\n")
-                continue
+        try:
+            building_filename = sys.argv[1]
+            calls_filename = sys.argv[2]
+            output_filename = sys.argv[3]
+            algo = OffLineAlgo(building_filename, calls_filename)
+        except:
+            print("Wrong building or calls file path.\n")
     else:
         while True:
             try:
                 building_filename = input("json building file name (path): ")
                 calls_filename = input("csv calls file name (path): ")
-                algo = OffLinealgo(building_filename, calls_filename)
+                algo = OffLineAlgo(building_filename, calls_filename)
                 output_filename = input("output file name: ")
                 break
             except:

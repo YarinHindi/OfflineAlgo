@@ -21,9 +21,9 @@ class Calls:
 
     """
     @staticmethod
-    def callsToCsv(arrayofCalls):
+    def callsToCsv(arrayofCalls, output_filename):
 
-        filename = 'output.csv'
+        filename = output_filename+".csv"
         newArrayofCalls =[]
         for i in arrayofCalls:
             newArrayofCalls.append(i.__dict__.values())
