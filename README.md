@@ -53,18 +53,18 @@ python main.py <building json> <calls csv> <output file name>
 
 
 Example for running the algorithm:
-
+```
 python main.py Buildings//B3.json Calls//Calls_c.csv output
-
+```
 Template for running the test simulation:
-
+```
 java -jar Ex1_checker_V1.2_obf.jar <Id's> <building json> <calls csv> <output file name>
-
+```
 
 Example for running the test simulation:
-
+```
 java -jar Ex1_checker_V1.2_obf.jar 12345 B3.json Calls_c.csv output.log
-
+```
 
 # project creators
 Matan Yarin Shimon & Yarin Hindi
