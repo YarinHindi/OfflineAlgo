@@ -54,7 +54,7 @@ python main.py <building json> <calls csv> <output file name>
 
 Example for running the algorithm:
 
-python main.py Buildings//B3.json Calls//Calls_c.csv output.csv
+python main.py Buildings//B3.json Calls//Calls_c.csv output
 
 Template for running the test simulation:
 
